@@ -1,5 +1,5 @@
 {
-  "name": "testapp",
+  "name": "expense-tracer",
   "private": true,
   "workspaces": [
     "packages/*"

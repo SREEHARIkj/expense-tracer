@@ -1,4 +1,4 @@
-# testapp
+# expense-tracer
 
 To install dependencies:
 
