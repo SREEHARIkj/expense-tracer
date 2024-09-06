@@ -1,0 +1,20 @@
+{
+  "name": "testapp",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "nodeModules": "packages/node_modules",
+  "scripts": {
+    "start:all": "bun run --filter '*' dev",
+    "build:FE": "bun run --filter web-app build"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
