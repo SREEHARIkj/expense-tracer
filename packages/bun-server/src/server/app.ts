@@ -14,6 +14,7 @@ import { cors } from "hono/cors";
 import { creditRoute } from "../routes/expenses/credit";
 import { transactions } from "../routes/expenses";
 import { debitRoute } from "../routes/expenses/debit";
+import { serveStatic } from "hono/bun";
 
 const app = new Hono<Context>();
 
@@ -33,6 +34,20 @@ app.use(
 app.use("*", requestOriginMiddleware);
 
 app.use("*", validateSessionMiddleware);
+
+// serve FE form bun on production
+app.get(
+  "*",
+  serveStatic({
+    root: "../ui-dist",
+  })
+);
+app.get(
+  "*",
+  serveStatic({
+    path: "../ui-dist/index.html",
+  })
+);
 
 const apiRouts = app
   .basePath("/api")

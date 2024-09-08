@@ -3,7 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch --inspect run ./src/server/index.ts",
+    "dev": "bun --watch --inspect run ./src/server/index.ts ",
+    "build": "bun build ./src/server/index.ts --external bun:sqlite --outdir ./build",
+    "build:watch": "bun build ./src/server/index.ts --watch --external bun:sqlite --outdir ./build",
     "drizzle:initial-migration": "bunx drizzle-kit generate --dialect sqlite ",
     "drizzle:generate": "bunx drizzle-kit generate",
     "drizzle:migration": "bun run migrate.ts"

@@ -58,6 +58,7 @@ build/Release
 
 node_modules/
 jspm_packages/
+ui-dist/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 
