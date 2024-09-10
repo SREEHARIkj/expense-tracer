@@ -6,8 +6,11 @@
   ],
   "nodeModules": "packages/node_modules",
   "scripts": {
+    "install:all": "bun install",
     "start:all": "bun run --filter '*' dev",
-    "build:FE": "bun run --filter web-app build"
+    "build:FE": "bun run --filter web-app build",
+    "build:BE": "bun run --filter bun-server build",
+    "start": "npm run install:all && npm run start:all"
   },
   "module": "index.ts",
   "type": "module",

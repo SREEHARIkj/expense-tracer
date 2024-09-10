@@ -24,6 +24,9 @@ export default function LogIn({
 
               {errorMessages?.map?.((error) => <div>{error.message}</div>)}
             </div>
+            <div class={'mt-2 text-sm'} >
+              Create Account ?<a href="/api/forms/signup-form"> SignUp</a>
+            </div>
           </form>
         </Card>
       </div>
