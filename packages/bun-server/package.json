@@ -8,6 +8,7 @@
     "build:watch": "bun build ./src/server/index.ts --watch --external bun:sqlite --outdir ./build",
     "drizzle:initial-migration": "bunx drizzle-kit generate --dialect sqlite ",
     "drizzle:generate": "bunx drizzle-kit generate",
+    "drizzle:migrate": "bunx drizzle-kit migrate",
     "drizzle:migration": "bun run migrate.ts"
   },
   "devDependencies": {

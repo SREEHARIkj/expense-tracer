@@ -1,0 +1,28 @@
+# Ignore node_modules to prevent copying local dependencies
+node_modules
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Ignore version control directories
+.git
+.gitignore
+
+# Ignore development tools and configurations
+.vscode
+.idea
+.env
+.editorconfig
+Makefile
+
+# Ignore documentation files
+README.md
+LICENSE
+
+# Ignore build artifacts
+packages/bun-server/build/
+packages/bun-server/sqlite.db
+coverage/
+ui-dist/
