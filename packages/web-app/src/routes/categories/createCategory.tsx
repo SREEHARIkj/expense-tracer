@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { withAuthCheck } from "@/lib/auth-utility/withAuthCheck";
-import { useQueries } from "@tanstack/react-query";
+// import { useQueries } from "@tanstack/react-query";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/categories/createCategory")({
